@@ -65,7 +65,58 @@ exports.signIn = (req, res) => {
 
 // 登出
 exports.signOut = (req, res) => {
-   delete req.session.user;
-   res.send({result:'success'});
+    delete req.session.user;
+    res.send({result: 'success'});
 };
+
+// 登录页面
+exports.showSignIn = (req, res) => {
+    res.render('login', {title: '登录页面'});
+};
+
+// 列出所有用户
+exports.list = (req, res) => {
+    User.fetch((err, users) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.send({users: users});
+        }
+    });
+};
+
+exports.delete = (req, res) => {
+    let _id = req.query.id; // get请求的data:{id:_id}，从req.query中获取
+    let conditions = {_id: _id};
+    User.remove(conditions, (err, user) => {
+        if (err) {
+            console.log(err);
+            res.json({result: 'fail'});
+        } else {
+            res.json({result: 'success'});
+        }
+    });
+};
+
+// 登录 middle ware
+exports.signInRequire = (req, res, next) => {
+    let user = req.session.user;
+    if (!user) { // 未登录
+        res.redirect('/user/show-signin');
+    } else {
+        next();
+    }
+};
+
+// 管理员 middle ware
+exports.isAdminRequire = (req, res, next) => {
+    let user = req.session.user;
+    if (user.role > 10) { // 10以上为管理员角色
+        next();
+    } else {
+        res.redirect('/');
+    }
+};
+
+
 

@@ -5,7 +5,7 @@ $(function(){
 	$addBtn.click(() => {
 		addMovie();
 	})
-})
+});
 
 function addMovie(){
 	let movie = {

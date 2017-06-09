@@ -2,12 +2,10 @@
  * Created by lujing on 2017/6/8.
  */
 
-const $toSignInBtn = $('#to-signin-btn');
 const $signInModal = $('#signin-modal');
 const $signInForm = $('#signin-form');
 const $signInBtn = $('#signin-btn');
 
-const $toSignUpBtn = $('#to-signup-btn');
 const $signUpModal = $('#signup-modal');
 const $signUpForm = $('#signup-form');
 const $signUpBtn = $('#signup-btn');
@@ -24,7 +22,6 @@ $(() => {
         signIn();
     });
 
-
 });
 
 function getCurrentUser(){
@@ -34,11 +31,11 @@ function getCurrentUser(){
         success:function(data){
             let buttons = '';
             if(data.user){
-                buttons += '<button type="button" class="btn btn-primary">欢迎你 '+data.user.name+'</button>' +
-                    '<button type="button" class="btn btn-success" onclick="signOut();">退出</button>';
+                buttons += '<li><a href="javascript:void(0);">欢迎你 '+data.user.name+'</a></li>' +
+                    '<li><a href="javascript:void(0);" onclick="signOut();">退出</a></li>';
             }else{
-                buttons += '<button type="button" class="btn btn-primary" data-toggle="modal" onclick="toSignIn();">登录</button>' +
-                    '<button type="button" class="btn btn-success" data-toggle="modal" onclick="toSignUp();">注册</button>';
+                buttons += '<li><a href="javascript:void(0);" onclick="toSignIn();">登录</a></li>' +
+                    '<li><a onclick="toSignUp();">注册</a></li>';
             }
             $userSign.html(buttons);
         }
