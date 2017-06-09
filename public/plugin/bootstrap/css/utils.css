@@ -1,0 +1,139 @@
+/*导航栏多级菜单实现*/
+        .dropdown-submenu {
+            position: relative;
+        }
+        .dropdown-submenu > .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -6px;
+            margin-left: -1px;
+            -webkit-border-radius: 0 6px 6px 6px;
+            -moz-border-radius: 0 6px 6px;
+            border-radius: 0 6px 6px 6px;
+        }
+        .dropdown-submenu:hover > .dropdown-menu {
+            display: block;
+        }
+        .dropdown-submenu > a:after {
+            display: block;
+            content: " ";
+            float: right;
+            width: 0;
+            height: 0;
+            border-color: transparent;
+            border-style: solid;
+            border-width: 5px 0 5px 5px;
+            border-left-color: #ccc;
+            margin-top: 5px;
+            margin-right: -10px;
+        }
+        .dropdown-submenu:hover > a:after {
+            border-left-color: #fff;
+        }
+        .dropdown-submenu.pull-left {
+            float: none;
+        }
+        .dropdown-submenu.pull-left > .dropdown-menu {
+            left: -100%;
+            margin-left: 10px;
+            -webkit-border-radius: 6px 0 6px 6px;
+            -moz-border-radius: 6px 0 6px 6px;
+            border-radius: 6px 0 6px 6px;
+        }
+/*导航栏背景，按钮*/
+.navbar-btn{
+    background-color: #e6e6e6;
+}
+.navbar-bg{
+    background-color: #eeeeee;
+}
+.navbar-bg2{
+    background-color: #ffffff;
+}
+/*自带默认按钮*/
+.div-primary{
+    background-color: #84b4dd;
+}
+/*自定义面包屑导航背景*/
+.breadcrumb-bg{
+    background-color: #2bb2ff;
+}
+/*登陆窗口*/
+.login_input {
+position: relative;
+padding: 3px 0 3px 54px;
+border: 1px solid #e7e7eb;
+margin-top: -1px;
+}
+.login_input input{
+    border:0;
+    outline:0;
+    padding:11px 0;
+    vertical-align:middle;
+    width:100%
+}
+.login_frame{
+    padding:25px 35px 20px;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    box-shadow:3px 3px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow:3px 3px 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow:3px 3px 5px rgba(0,0,0,0.5);
+    background-color:#fff
+}
+.login_frame h3{
+    font-size:20px;
+    font-weight:400;
+    font-style:normal
+}
+.icon_login{
+    position:absolute;
+    left:15px;
+    top:50%;
+    margin-top:-8px;
+    width:16px;
+    height:18px;
+    vertical-align:middle;
+    display:inline-block
+}
+.login_err{
+    color:#e15f63;
+    font-size:13px;
+    margin-top:5px
+}
+
+.err_tips{
+    vertical-align:middle
+}
+/*footer*/
+footer{
+    background-color:#fff;
+    color:#bbb;
+    text-align:center;
+    font-size:12px;
+    font-family:"Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Arial,sans-serif
+}
+.footer-content{
+    display:inline-block;
+    padding:30px 0;
+    position:relative;
+    padding-right:90px
+}
+footer a,footer a:hover{
+    color:#bbb;
+    text-decoration:none
+}
+footer div{
+    margin-top:5px;
+    margin-bottom:5px
+}
+footer div span{
+    margin-left:10px
+}
+footer .nav span{
+    white-space:nowrap
+}
+
+
+

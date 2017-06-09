@@ -1,0 +1,49 @@
+/* icons */
+[class^="cus-"],
+[class*=" cus-"] {
+  display: inline-block;
+  width: 17px;
+  height: 16px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("icons/csg-544d0e01563ef.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+[class^="cus-"]:last-child,
+[class*=" cus-"]:last-child {
+  *margin-left: 0;
+}
+/* icons code below */
+cus-.sprite-accept{ background-position: 0 0; width: 16px; height: 16px; } 
+cus-.sprite-bell{ background-position: -21px 0; width: 16px; height: 16px; } 
+cus-.sprite-bell_add{ background-position: -42px 0; width: 16px; height: 16px; } 
+cus-.sprite-bell_delete{ background-position: -63px 0; width: 16px; height: 16px; } 
+cus-.sprite-bell_error{ background-position: -84px 0; width: 16px; height: 16px; } 
+cus-.sprite-comment{ background-position: -105px 0; width: 16px; height: 16px; } 
+cus-.sprite-comment_add{ background-position: -126px 0; width: 16px; height: 16px; } 
+cus-.sprite-comment_delete{ background-position: -147px 0; width: 16px; height: 16px; } 
+cus-.sprite-comment_edit{ background-position: -168px 0; width: 16px; height: 16px; } 
+cus-.sprite-comments{ background-position: -189px 0; width: 16px; height: 16px; } 
+cus-.sprite-comments_add{ background-position: -210px 0; width: 16px; height: 16px; } 
+cus-.sprite-comments_delete{ background-position: -231px 0; width: 16px; height: 16px; } 
+cus-.sprite-date{ background-position: -252px 0; width: 16px; height: 16px; } 
+cus-.sprite-date_add{ background-position: -273px 0; width: 16px; height: 16px; } 
+cus-.sprite-date_delete{ background-position: -294px 0; width: 16px; height: 16px; } 
+cus-.sprite-date_edit{ background-position: -315px 0; width: 16px; height: 16px; } 
+cus-.sprite-date_error{ background-position: -336px 0; width: 16px; height: 16px; } 
+cus-.sprite-date_go{ background-position: -357px 0; width: 16px; height: 16px; } 
+cus-.sprite-date_link{ background-position: -378px 0; width: 16px; height: 16px; } 
+cus-.sprite-date_magnify{ background-position: -399px 0; width: 16px; height: 16px; } 
+cus-.sprite-date_next{ background-position: -420px 0; width: 16px; height: 16px; } 
+cus-.sprite-date_previous{ background-position: -441px 0; width: 16px; height: 16px; } 
+cus-.sprite-email_add{ background-position: -462px 0; width: 16px; height: 16px; } 
+cus-.sprite-email_attach{ background-position: -483px 0; width: 16px; height: 16px; } 
+cus-.sprite-email_delete{ background-position: -504px 0; width: 16px; height: 16px; } 
+cus-.sprite-email_edit{ background-position: -525px 0; width: 16px; height: 16px; } 
+cus-.sprite-email_error{ background-position: -546px 0; width: 16px; height: 16px; } 
+cus-.sprite-email_go{ background-position: -567px 0; width: 16px; height: 16px; } 
+cus-.sprite-email_link{ background-position: -588px 0; width: 16px; height: 16px; } 
+cus-.sprite-email_open{ background-position: -609px 0; width: 16px; height: 16px; } 
+cus-.sprite-email_open_image{ background-position: -630px 0; width: 16px; height: 16px; } 

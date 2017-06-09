@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>影片详情</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/plugin/bootstrap/css/common/bootstrap.min.css' />
+  </head>
+  <script type="text/javascript">
+  	const movieId = '<%= movieId %>';
+  </script>
+  <body>
+    <h1>影片详情</h1>
+    <div class="row">
+    	<div class="col-sm-6">
+			<embed id="flash" src="", quality="high", width="700", height="450", align="middle", type="application/x-shockwave-flash"/>
+    	</div>
+    	<div class="col-sm-6" id="movie-details">
+    		<dl class="dl-horizontal"><dt>影片名称</dt><dd name="title"></dd></dl>
+    		<dl class="dl-horizontal"><dt>导演</dt><dd name="director"></dd></dl>
+    		<dl class="dl-horizontal"><dt>国家</dt><dd name="country"></dd></dl>
+    		<dl class="dl-horizontal"><dt>语言</dt><dd name="language"></dd></dl>
+    		<dl class="dl-horizontal"><dt>上映年份</dt><dd name="year"></dd></dl>
+    		<dl class="dl-horizontal"><dt>简介</dt><dd name="summary"></dd></dl>
+    		
+    	</div>
+    </div>
+
+    <script type="text/javascript" src="/plugin/bootstrap/js/common/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="/plugin/bootstrap/js/common/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/javascripts/html_movie_details.js"></script>
+  </body>
+</html>
